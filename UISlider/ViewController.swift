@@ -10,11 +10,16 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var textShow: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func btn_slider(_ sender: UISlider) {
+        
+        textShow.text = String(Int(sender.value))
+    }
+    
 }
 
